@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hourly-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.hour-box {
+  flex: 0 0 auto;
+  width: 120px;
+  margin: 5px;
+  padding: 10px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hour-box h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.daily-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.day-box {
+  flex: 0 0 auto;
+  width: 180px;
+  margin: 10px;
+  padding: 15px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.day-box:hover {
+  transform: scale(1.05);
+}
+
+.date {
+  color: #d9534f;   /* red highlight */
+  font-weight: bold;
+}
+
+.time {
+  color: #333;      /* darker neutral for time */
+}
+
+
+#back-btn {
+  display: none;              /* hidden by default */
+  margin: 15px auto;          /* center horizontally */
+  padding: 10px 20px;
+  background: #007bff;        /* nice blue */
+  color: white;
+  border: none;
+  border-radius: 25px;        /* rounded pill shape */
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#back-btn:hover {
+  background: #0056b3;        /* darker blue on hover */
+  transform: scale(1.05);     /* subtle zoom */
+}
